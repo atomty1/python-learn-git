@@ -1,10 +1,12 @@
-print("Welcoe to my calculator")
+print("Welcome to my calculator")
 def calculator():
-    menu = input("1. Addition 2. Subtraction")
+    menu = input("1. Addition 2. Subtraction 3. Multiplication")
     if(menu == "1"):
         addition()
     elif(menu == "2"):
         subtraction()
+    elif(menu == "3"):
+        multiplication()
     else:
         print("incorrect entry")
     
@@ -25,6 +27,12 @@ def subtraction():
     first = float(input("Enter the first number: "))
     second = float(input("Enter the second number: "))
     result = first - second
+    print(result)
+
+def multiplication():
+    first = float(input("Enter the first number: "))
+    second = float(input("Enter the second number: "))
+    result = first * second
     print(result)
 
 calculator()

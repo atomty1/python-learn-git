@@ -18,6 +18,7 @@ def calculator():
         calculator()
     else:
         print("BYE!")
+        print("See you again")
 
 def addition():
     first = float(input("Enter the first number: "))
